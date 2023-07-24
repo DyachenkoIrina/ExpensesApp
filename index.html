@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Счетчик расходов</title>
+    <link rel="icon" href="resources/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="expenses">
+      <h1>Анализ расходов</h1>
+      <div class="analysis">
+        <p>
+          Текущие расходы:
+          <span class="js-total total">0</span>руб.
+        </p>
+        <p>Лимит: <span class="js-limit limit">0</span>руб.</p>
+        <button class="js-limit-btn limit-btn">
+          <img src="resources/change_limit.png" alt="Кнопка смены лимита" />
+        </button>
+      </div>
+
+      <p><span class="js-status status"></span></p>
+      <h2>Учет расходов</h2>
+
+      <div class="expenses_input">
+        <input class="js-input input" type="number" min="0" />
+        <select class="js-categorySelect categorySelect">
+          <option hidden disabled selected value="Категория">Категория</option>
+          <option value="Рестораны">Кафе и рестораны</option>
+          <option value="Здоровье">Медицина</option>
+          <option value="Красота">Салоны красоты</option>
+          <option value="Магазины">Супермаркеты</option>
+          <option value="Транспорт">Транспорт</option>
+        </select>
+      </div>
+      <button class="js-addBtn addBtn">Добавить</button>
+
+      <h2>История</h2>
+      <div class="js-history history"></div>
+      <button class="js-clear_btn clear_btn">Сбросить расходы</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

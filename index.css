@@ -1,0 +1,82 @@
+body {
+  max-width: 100%;
+  font-family: "Oswald", sans-serif;
+  background-color: ffffff;
+  color: 121212;
+  padding: 30px;
+}
+.expenses {
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 25px;
+  padding: 20px;
+}
+.analysis {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.limit-btn {
+  width: 30px;
+  height: 25px;
+  background-color: white;
+  border: none;
+}
+
+.limit-btn:hover {
+  border-bottom: 2px;
+  border-color: blue;
+  cursor: pointer;
+}
+
+.expenses_input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.input_sum,
+.categorySelect {
+  width: 200px;
+  font: inherit;
+  color: 121212;
+  border-style: ridge;
+}
+
+.addBtn,
+.clear_btn {
+  width: 150px;
+  height: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.addBtn:hover,
+.clear_btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.history_list {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.clear_btn {
+  padding: 5px;
+  margin: 20px;
+  background-color: brown;
+}
